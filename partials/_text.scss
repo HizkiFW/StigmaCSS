@@ -1,3 +1,28 @@
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
+
+// Sizes
+.xs {
+	font-size: .25em;
+}
+.s {
+	font-size: .5em;
+}
+.m {
+	font-size: 1.5em;
+}
+.l {
+	font-size: 2em;
+}
+.xl {
+	font-size: 4em;
+}
+
+// Weights
+.bold {
+	font-weight: bold;
+}
+.light {
+	font-weight: lighter;
+}

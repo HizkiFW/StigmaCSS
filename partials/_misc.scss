@@ -14,14 +14,39 @@ hr {
 	text-align: left;
 }
 
-// Sections
+// Displays
+
+
+// Header
 .header {
-	
+	text-align: center;
+	padding-top: 10em;
+	padding-bottom: 3em;
+
+	h1 {
+		font-size: 4em;
+		margin-bottom: 0.1em;
+	}
+	small {
+		font-size: 1.5em;
+		font-weight: lighter;
+		display: block;
+		margin-bottom: 1em;
+	}
 }
 @each $name, $color in $colors {
 	.header-#{$name} {
 		color: map-get($colors, "white");
-		border-color: $color;
 		background-color: $color;
+	}
+}
+
+// Sections
+.section {
+	border-bottom: 1px solid map-get($colors, "gray");
+}
+@each $name, $color in $colors {
+	.section-#{$name} {
+		border-bottom: 1px solid $color;
 	}
 }

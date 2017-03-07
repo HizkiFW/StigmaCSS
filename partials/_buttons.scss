@@ -2,6 +2,8 @@
 	border: $border-width solid map-get($colors, gray);
 	padding: .5em 1em;
 	border-radius: $border-radius;
+	text-decoration: none;
+	display: inline-block;
 	cursor: pointer;
 
 	transition: all .1s;
