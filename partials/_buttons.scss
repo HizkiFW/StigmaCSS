@@ -6,3 +6,15 @@
 
 	transition: all .1s;
 }
+
+@each $name, $color in $colors {
+	.btn-#{$name} {
+		color: map-get($colors, "white");
+		border-color: $color;
+		background-color: $color;
+	}
+	.btn-#{$name}:hover {
+		color: $color;
+		background-color: map-get($colors, "none");
+	}
+}
