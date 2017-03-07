@@ -2,3 +2,26 @@ hr {
 	border: 0;
 	border-top: 1px solid map-get($colors, "gray");
 }
+
+// Alignment
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+
+// Sections
+.header {
+	
+}
+@each $name, $color in $colors {
+	.header-#{$name} {
+		color: map-get($colors, "white");
+		border-color: $color;
+		background-color: $color;
+	}
+}
