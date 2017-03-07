@@ -1,0 +1,7 @@
+// Grid system
+@for $grid-width from 1 to 12 {
+	.col-#{$grid-width} {
+		display: inline-block;
+		width: $grid-width / 12 * 100% - 1%;
+	}
+}

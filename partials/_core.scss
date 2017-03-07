@@ -31,3 +31,19 @@ body {
 	font-family: $font-family-base;
 	color: $font-color;
 }
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.container-full {
+	width: 100%;
+}
+@media screen and (min-width: $desktop-width-min) {
+	.container {
+		width: $desktop-width-min;
+	}
+	.container-full {
+		width: 100%;
+	}
+}
