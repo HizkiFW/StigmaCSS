@@ -2,6 +2,10 @@
 @for $grid-width from 1 to 12 {
 	.col-#{$grid-width} {
 		display: inline-block;
-		width: $grid-width / 12 * 100% - 1%;
+	}
+	@media screen and (min-width: $wrap-down-width) {
+		.col-#{$grid-width} {
+			width: $grid-width / 12 * 100% - 1%;
+		}
 	}
 }
