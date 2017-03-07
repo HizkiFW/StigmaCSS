@@ -1,0 +1,11 @@
+// Borders
+$border-width: 1px;
+$border-radius: 10px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+$font-family-sans: Roboto, Lato, "Helvetica Neue", Calibri, Arial, sans-serif;
+$font-family-mono: "Source Code Pro", Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans;
+
+$font-color: #222;
