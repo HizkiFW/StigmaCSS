@@ -12,3 +12,13 @@ $colors: (
 	"orange": #FF9800,
 	"brown":  #795548,
 );
+
+@each $name, $color in $colors {
+	.fore-#{$name} {
+		color: $color;
+		border-color: $color;
+	}
+	.back-#{$name} {
+		background-color: $color;
+	}
+}
