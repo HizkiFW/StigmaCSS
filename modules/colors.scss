@@ -1,3 +1,14 @@
-$white: #FFF !default;
-$black: #000 !default;
-$red:   #F33 !default;
+$colors: (
+	"white":  #FFF,
+	"black":  #000,
+	"red":    #D50000,
+	"pink":   #E91E63,
+	"purple": #9C27B0,
+	"indigo": #3F51B5,
+	"blue":   #2196F3,
+	"cyan":   #00BCD4,
+	"green":  #4CAF50,
+	"yellow": #FFEB3B,
+	"orange": #FF9800,
+	"brown":  #795548,
+);
