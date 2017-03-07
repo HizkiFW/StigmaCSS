@@ -2,4 +2,7 @@
 	border: $border-width solid map-get($colors, gray);
 	padding: .5em 1em;
 	border-radius: $border-radius;
+	cursor: pointer;
+
+	transition: all .1s;
 }

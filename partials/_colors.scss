@@ -1,4 +1,5 @@
 $colors: (
+	"none": rgba(0, 0, 0, 0),
 	"white":  #FFF,
 	"gray":   #BBB,
 	"black":  #000,
@@ -20,6 +21,14 @@ $colors: (
 		border-color: $color;
 	}
 	.back-#{$name} {
+		background-color: $color;
+	}
+
+	.hover-fore-#{$name}:hover {
+		color: $color;
+		border-color: $color;
+	}
+	.hover-back-#{$name}:hover {
 		background-color: $color;
 	}
 }
