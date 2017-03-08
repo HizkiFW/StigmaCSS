@@ -27,4 +27,19 @@
 		border-color: darken($color, 15%);
 		background-color: map-get($colors, "none");
 	}
+
+	.btn-#{$name}-inv {
+		color: $color;
+		border-color: map-get($colors, "none");
+		background-color: map-get($colors, "none");
+	}
+	.btn-#{$name}-inv:hover {
+		color: map-get($colors, "white");
+		background-color: $color;
+	}
+	.btn-#{$name}-inv:active {
+		color: map-get($colors, "white");
+		border-color: darken($color, 15%);
+		background-color: darken($color, 15%);
+	}
 }
