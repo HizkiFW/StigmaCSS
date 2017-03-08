@@ -1,6 +1,9 @@
 .btn {
+	font-size: 1em;
+	line-height: 1em;
 	border: $border-width solid map-get($colors, gray);
-	padding: .5em 1em;
+	padding: $form-control-padding;
+	margin: $form-control-margin;
 	border-radius: $border-radius;
 	text-decoration: none;
 	display: inline-block;
@@ -17,6 +20,11 @@
 	}
 	.btn-#{$name}:hover {
 		color: $color;
+		background-color: map-get($colors, "none");
+	}
+	.btn-#{$name}:active {
+		color: darken($color, 15%);
+		border-color: darken($color, 15%);
 		background-color: map-get($colors, "none");
 	}
 }

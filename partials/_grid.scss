@@ -18,6 +18,21 @@
 		.col-#{$grid-width} {
 			display: inline-block;
 			width: $grid-width / 12 * 100%;
+			padding: 1%;
 		}
 	}
+}
+
+.block, .full {
+	width: 100%;
+	display: block;
+}
+.half {
+	width: 50%;
+}
+.third {
+	width: 33.33333%;
+}
+.quarter {
+	width: 25%;
 }

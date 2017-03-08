@@ -21,10 +21,12 @@ limitations under the License.
 @import "partials/values";
 
 // Core
+@import "normalize";
 @import "partials/core";
 @import "partials/grid";
 
 // Components
 @import "partials/buttons";
+@import "partials/forms";
 @import "partials/text";
 @import "partials/misc";

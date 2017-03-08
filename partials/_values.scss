@@ -13,3 +13,8 @@ $font-color: #333;
 // Display
 $desktop-width-min: 960px;
 $wrap-down-width: 640px;
+
+// Controls
+$form-control-margin: .1em;
+$form-control-padding: .5em 1em;
+$active-color: map-get($colors, "blue");
