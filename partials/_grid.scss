@@ -1,11 +1,23 @@
 // Grid system
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+@media screen and (max-width: $wrap-down-width) {
+	.row {
+		display: inherit;
+	}
+}
+
 @for $grid-width from 1 to 12 {
 	.col-#{$grid-width} {
-		display: inline-block;
+		display: block;
+		margin-bottom: .5em;
 	}
 	@media screen and (min-width: $wrap-down-width) {
 		.col-#{$grid-width} {
-			width: $grid-width / 12 * 100% - 1%;
+			display: inline-block;
+			width: $grid-width / 12 * 100%;
 		}
 	}
 }

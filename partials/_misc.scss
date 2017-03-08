@@ -14,14 +14,11 @@ hr {
 	text-align: left;
 }
 
-// Displays
-
-
 // Header
 .header {
 	text-align: center;
 	padding-top: 10em;
-	padding-bottom: 3em;
+	padding-bottom: 1em;
 
 	h1 {
 		font-size: 4em;
@@ -42,8 +39,9 @@ hr {
 }
 
 // Sections
-.section {
+.section, section {
 	border-bottom: 1px solid map-get($colors, "gray");
+	padding: 3em 0;
 }
 @each $name, $color in $colors {
 	.section-#{$name} {

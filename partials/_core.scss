@@ -35,9 +35,11 @@ body {
 .container {
 	width: 100%;
 	margin: 0 auto;
+	padding: 2em;
 }
 .container-full {
 	width: 100%;
+	padding: 2em;
 }
 @media screen and (min-width: $desktop-width-min) {
 	.container {
