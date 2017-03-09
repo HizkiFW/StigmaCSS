@@ -3,18 +3,16 @@
 	font-size: 1em;
 	line-height: 1em;
 	border: $border-width solid map-get($colors, "gray");
-	//border: 1px solid darken(map-get($colors, "white"), 5%);
-	//background-color: darken(map-get($colors, "white"), 5%);
 	border-radius: $border-radius;
 	padding: $form-control-padding;
 	margin: $form-control-margin;
 
 	transition: all .1s;
 }
-
 .form-control:focus {
 	border-color: $active-color;
-	//border-color: darken(map-get($colors, "white"), 3%);
-	//background-color: darken(map-get($colors, "white"), 3%);
 	outline: none;
+}
+.form-control:focus, .form-control:hover {
+	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
 }
