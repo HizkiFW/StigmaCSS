@@ -16,3 +16,24 @@
 .form-control:focus, .form-control:hover {
 	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
 }
+
+label {
+	line-height: 1em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.form-radio {
+	-webkit-appearance: none;
+	width: 1em;
+	height: 1em;
+	border: 1px solid map-get($colors, "gray");
+	border-radius: 1em;
+	line-height: 1em;
+	vertical-align: middle;
+	cursor: pointer;
+
+	transition: all .1s;
+}
+.form-radio:hover {
+	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
+}
