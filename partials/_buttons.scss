@@ -4,10 +4,12 @@
 	border: $border-width solid map-get($colors, gray);
 	padding: $form-control-padding;
 	margin: $form-control-margin;
+	height: $form-control-height;
 	border-radius: $border-radius;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
+	vertical-align: middle;
 
 	transition: all .1s;
 }

@@ -6,6 +6,8 @@
 	border-radius: $border-radius;
 	padding: $form-control-padding;
 	margin: $form-control-margin;
+	height: $form-control-height;
+	vertical-align: middle;
 
 	transition: all .1s;
 }
