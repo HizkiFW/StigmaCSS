@@ -1,3 +1,4 @@
+// Form controls
 .form-control {
 	display: inline-block;
 	font-size: 1em;
@@ -69,4 +70,22 @@ label {
     font-size: 1.3em;
     line-height: 0;
     font-weight: bold;
+}
+
+// Form control groups
+.form-group {
+	.form-control, .btn {
+		margin: $form-control-margin 0;
+		border-radius: 0;
+	}
+	.form-control:first-child, .btn:first-child {
+		border-top-left-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+		margin-left: $form-control-margin;
+	}
+	.form-control:last-child, .btn:last-child {
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+		margin-right: $form-control-margin;
+	}
 }
