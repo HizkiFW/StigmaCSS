@@ -39,14 +39,14 @@ label {
 	transition: all .1s;
 }
 .form-radio:hover, .form-checkbox:hover {
-	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
+	box-shadow: inset 0 0 5px 0 map-get($colors, "gray");
 }
 
 .form-radio {
 	border-radius: 1em;
 }
 .form-radio:checked {
-	box-shadow: 0 0 0 3px map-get($colors, "white") inset;
+	box-shadow: inset 0 0 0 3px map-get($colors, "white");
 	border-color: $active-color;
 	background-color: $active-color;
 }
