@@ -9,6 +9,7 @@
 	margin: $form-control-margin;
 	height: $form-control-height;
 	vertical-align: middle;
+	min-width: 25%;
 
 	transition: all .1s;
 }
@@ -74,6 +75,9 @@ label {
 
 // Form control groups
 .form-group {
+	display: flex;
+	flex-wrap: nowrap;
+
 	.form-control, .btn {
 		margin: $form-control-margin 0;
 		border-radius: 0;
