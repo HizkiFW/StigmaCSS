@@ -22,12 +22,12 @@ label {
 	vertical-align: middle;
 	cursor: pointer;
 }
-.form-radio {
+
+.form-radio, .form-checkbox {
 	-webkit-appearance: none;
 	width: 1em;
 	height: 1em;
 	border: 1px solid map-get($colors, "gray");
-	border-radius: 1em;
 	line-height: 1em;
 	vertical-align: middle;
 	cursor: pointer;
@@ -36,11 +36,34 @@ label {
 
 	transition: all .1s;
 }
-.form-radio:hover {
+.form-radio:hover, .form-checkbox:hover {
 	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
+}
+
+.form-radio {
+	border-radius: 1em;
 }
 .form-radio:checked {
 	box-shadow: 0 0 0 3px map-get($colors, "white") inset;
 	border-color: $active-color;
 	background-color: $active-color;
+}
+
+.form-checkbox {
+	border-radius: $border-radius;
+}
+.form-checkbox::after {
+	color: $active-color;
+	content: "\2713";
+	opacity: 0;
+	font-size: 0;
+	transition: all .1s;
+}
+.form-checkbox:checked {
+	border-color: $active-color;
+}
+.form-checkbox:checked::after {
+	opacity: 1;
+	font-size: 1em;
+    font-weight: bold;
 }
