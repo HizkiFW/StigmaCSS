@@ -31,9 +31,15 @@ label {
 	line-height: 1em;
 	vertical-align: middle;
 	cursor: pointer;
+	margin: .25em 0;
+	outline: none;
 
 	transition: all .1s;
 }
 .form-radio:hover {
 	box-shadow: 0 0 5px 0 map-get($colors, "gray") inset;
+}
+.form-radio:checked {
+	box-shadow: 0 0 0 3px map-get($colors, "white") inset;
+	background-color: $active-color;
 }
