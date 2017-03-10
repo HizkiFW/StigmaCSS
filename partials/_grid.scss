@@ -13,12 +13,12 @@
 	.col-#{$grid-width} {
 		display: block;
 		margin-bottom: .5em;
+		padding: 1vh 1vw;
 	}
 	@media screen and (min-width: $wrap-down-width) {
 		.col-#{$grid-width} {
 			display: inline-block;
 			width: $grid-width / 12 * 100%;
-			padding: 1vh 1vw;
 		}
 	}
 }
