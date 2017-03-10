@@ -41,5 +41,6 @@ label {
 }
 .form-radio:checked {
 	box-shadow: 0 0 0 3px map-get($colors, "white") inset;
+	border-color: $active-color;
 	background-color: $active-color;
 }
