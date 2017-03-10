@@ -18,7 +18,7 @@
 		.col-#{$grid-width} {
 			display: inline-block;
 			width: $grid-width / 12 * 100%;
-			padding: 1%;
+			padding: 1vh 1vw;
 		}
 	}
 }
