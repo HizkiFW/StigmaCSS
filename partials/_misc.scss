@@ -54,3 +54,24 @@ hr {
 		border-bottom: 1px solid $color;
 	}
 }
+
+// Decor
+@keyframes loader-circle {
+	from {
+		width: 0;
+		height: 0;
+		margin: 1em;
+		opacity: 1;
+	}
+	to {
+		width: 2em;
+		height: 2em;
+		margin: 0;
+		opacity: 0;
+	}
+}
+.loader {
+	border-radius: 2em;
+	background-color: map-get($colors, "blue");
+	animation: loader-circle 1s infinite;
+}
