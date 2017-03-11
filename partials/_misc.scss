@@ -56,22 +56,40 @@ hr {
 }
 
 // Decor
+$loader-size: 2em;
 @keyframes loader-circle {
 	from {
 		width: 0;
 		height: 0;
-		margin: 1em;
+		margin: $loader-size / 2;
 		opacity: 1;
 	}
 	to {
-		width: 2em;
-		height: 2em;
+		width: $loader-size;
+		height: $loader-size;
 		margin: 0;
 		opacity: 0;
 	}
 }
+@keyframes spinner {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
 .loader {
-	border-radius: 2em;
-	background-color: map-get($colors, "blue");
+	border-radius: $loader-size;
+	background-color: $active-color;
 	animation: loader-circle 1s infinite;
+}
+.spinner {
+	border-radius: $loader-size;
+	width: $loader-size;
+	height: $loader-size;
+	border: $loader-size / 8 solid $active-color;
+	border-top: $loader-size / 8 solid rgba(0, 0, 0, 0);
+	animation: spinner 1s infinite;
+	animation-timing-function: cubic-bezier(.5, .2, .5, .8);
 }
