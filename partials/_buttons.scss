@@ -14,7 +14,7 @@
 	transition: all .1s;
 }
 .btn:disabled {
-	cursor: not-allowed;
+	cursor: default;
 }
 
 @each $name, $color in $colors {
@@ -43,6 +43,7 @@
 	}
 	.btn-#{$name}-inv:disabled {
 		color: lighten($color, 30%);
+		background-color: $disabled-color;
 	}
 	.btn-#{$name}-inv:hover:enabled {
 		color: map-get($colors, "white");

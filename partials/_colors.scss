@@ -8,6 +8,7 @@ $colors: (
 	"green":  #4CAF50,
 	"orange": #FF9800,
 );
+$disabled-color: #EBEBE4;
 
 @each $name, $color in $colors {
 	.fore-#{$name} {
