@@ -13,6 +13,9 @@
 
 	transition: all .1s;
 }
+.btn:disabled {
+	cursor: not-allowed;
+}
 
 @each $name, $color in $colors {
 	.btn-#{$name} {
@@ -20,11 +23,14 @@
 		border-color: $color;
 		background-color: $color;
 	}
-	.btn-#{$name}:hover {
+	.btn-#{$name}:disabled {
+		background-color: lighten($color, 30%);
+	}
+	.btn-#{$name}:hover:enabled {
 		color: $color;
 		background-color: map-get($colors, "none");
 	}
-	.btn-#{$name}:active {
+	.btn-#{$name}:active:enabled {
 		color: darken($color, 15%);
 		border-color: darken($color, 15%);
 		background-color: map-get($colors, "none");
@@ -35,11 +41,14 @@
 		border-color: map-get($colors, "none");
 		background-color: map-get($colors, "none");
 	}
-	.btn-#{$name}-inv:hover {
+	.btn-#{$name}-inv:disabled {
+		color: lighten($color, 30%);
+	}
+	.btn-#{$name}-inv:hover:enabled {
 		color: map-get($colors, "white");
 		background-color: $color;
 	}
-	.btn-#{$name}-inv:active {
+	.btn-#{$name}-inv:active:enabled {
 		color: map-get($colors, "white");
 		border-color: darken($color, 15%);
 		background-color: darken($color, 15%);
